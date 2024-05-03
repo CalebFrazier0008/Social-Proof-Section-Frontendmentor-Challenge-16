@@ -1,0 +1,264 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: "League Spartan", sans-serif;
+  overflow-x: hidden;
+}
+.Container {
+  height: 1200px;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Top {
+  height: 40%;
+  width: 320px;
+  max-width: 100vw;
+  padding: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+  margin-top: 40px;
+}
+h1 {
+  margin: 20px;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+p {
+  opacity: 80%;
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(303, 10%, 53%);
+}
+.Top > p {
+  font-size: 16px;
+}
+.Stars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Star {
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.Star-row {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+h5 {
+  color: hsl(300, 43%, 22%);
+}
+.Bottom {
+  height: 50%;
+  width: 320px;
+  max-width: 100vw;
+  padding: 20px;
+  padding-top: 0px;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.Rat {
+  width: 100%;
+  height: 180px;
+  background-color: hsl(300, 43%, 22%);
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.Rat-1 {
+  margin-top: 0px;
+}
+img {
+  border-radius: 50px;
+  width: 40px;
+}
+.Rating-Heading {
+  display: flex;
+  flex-direction: row;
+}
+.Account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.Account > h5 {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.Account > p {
+  color: hsl(333, 80%, 67%);
+  font-size: 14px;
+  margin-top: 4px;
+}
+.Rat > p {
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+@media only screen and (min-width: 1200px) {
+  .Container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Top {
+    height: auto;
+    width: 1200px;
+    max-width: 100vw;
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: left;
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    grid-template-columns: 50% 50%;
+  }
+  h1 {
+    margin: 20px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+  }
+  p {
+    opacity: 80%;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(303, 10%, 53%);
+  }
+  .Top > p {
+    font-size: 16px;
+  }
+  .Top > h1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    padding-right: 200px;
+    font-size: 50px;
+  }
+  .Top > p {
+    grid-row: 3 / 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 20px;
+    margin-top: 50px;
+    padding-right: 20px;
+    font-size: 22px;
+  }
+  .Stars {
+    grid-row: 1 / 6;
+    grid-column: 2 / 2;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .Star {
+    height: 50px;
+    width: 350px;
+    margin-top: 20px;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  .Star-row {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  h5 {
+    margin-top: 5px;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+  }
+  .Star-1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  .Star-2 {
+    position: absolute;
+    top: 70px;
+    left: 60px;
+  }
+  .Star-3 {
+    position: absolute;
+    top: 130px;
+    left: 100px;
+  }
+  .Bottom {
+    height: 30%;
+    width: 1200px;
+    max-width: 100vw;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+  }
+  .Rat {
+    width: 330px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .Rat-1 {
+    margin-top: 0px;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+  }
+  .Rat-2 {
+    margin-top: 0px;
+    position: absolute;
+    top: 15px;
+    left: 393px;
+  }
+  .Rat-3 {
+    margin-top: 0px;
+    position: absolute;
+    top: 30px;
+    left: 745px;
+  }
+  .Rat > p {
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
